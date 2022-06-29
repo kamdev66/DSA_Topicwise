@@ -1,16 +1,4 @@
-         
-            //bottom wall
-            for(int i=maxRow,j=minCol;j<=maxCol&& count<totalElements;j++){
-                System.out.println(arr[i][j]);
-                count++;
-            }
-            maxRow--;
-            
-            //right wall
-            for(int i=maxRow,j=maxCol;i>=minRow && count<totalElements;i--){
-                System.out.println(arr[i][j]);
-                count++;
-    import java.io.*;
+import java.io.*;
 import java.util.*;
 
 public class Main {
@@ -41,7 +29,19 @@ public class Main {
                 count++;
             }
             minCol++;
-           }
+           
+            //bottom wall
+            for(int i=maxRow,j=minCol;j<=maxCol&& count<totalElements;j++){
+                System.out.println(arr[i][j]);
+                count++;
+            }
+            maxRow--;
+            
+            //right wall
+            for(int i=maxRow,j=maxCol;i>=minRow && count<totalElements;i--){
+                System.out.println(arr[i][j]);
+                count++;
+            }
             maxCol--;
             
             //top wall
@@ -50,8 +50,8 @@ public class Main {
                 count++;
             }
             minRow++;
+            
         }
         
     }
-
 }
