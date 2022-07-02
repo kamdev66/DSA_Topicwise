@@ -18,8 +18,6 @@ public class Main
           val=true;
           ans=i+1;
           break;
-        }else{
-          val=false;
         }
       }
       if(val==true){
